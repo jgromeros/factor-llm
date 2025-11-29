@@ -1,5 +1,5 @@
 from flask import Flask
-from factor.api.extract_api import extract_api
+from factor.llm.api.extract_api import extract_api
 
 def create_app():
     app = Flask(__name__)
