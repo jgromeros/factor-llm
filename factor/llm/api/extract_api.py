@@ -1,8 +1,10 @@
-import factor.llm_model.factorbedrock as factorbedrock
-import factor.util.file_utils as file_utils
-from flask import Blueprint, Flask, jsonify, request
+from flask import jsonify, request
+from flask_smorest import Blueprint
 import os
 import tempfile
+
+import factor.llm_model.factorbedrock as factorbedrock
+import factor.util.file_utils as file_utils
 
 extract_api = Blueprint('extract_api', __name__)
 
